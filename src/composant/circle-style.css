@@ -1,0 +1,28 @@
+.floating-circle {
+  width: 160px;
+  min-width: 160px;
+  height: 160px;
+  background-color: #17ffb92d; /* Green color */
+  border-radius: 50%;
+  box-shadow: 0 0 10px 4px #17ffb92d;
+  display: flex;
+
+  background-image: url(../assets/Screenshot_2025-04-15_223434-picaai-removebg-preview.png);
+  /* Animation - gentle up and down */
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: -10px 0px;
+  outline: 4px dashed rgba(240, 248, 255, 0.11);
+  outline-offset: 3px;
+  animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-32px);
+  }
+}
