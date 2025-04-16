@@ -141,6 +141,7 @@
 }
 .contact-text p {
   text-align: left;
+  color: rgba(240, 248, 255, 0.698);
 }
 .contact-text h1 {
   text-align: center;
@@ -179,5 +180,5 @@
 .contact-img a:hover {
   scale: 1.2;
   cursor: pointer;
-  transform: rotate(360deg);
+  transform: rotate(720deg);
 }
