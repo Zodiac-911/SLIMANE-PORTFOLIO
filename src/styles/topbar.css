@@ -8,14 +8,13 @@
   background-color: rgba(127, 255, 212, 0.137);
   align-items: center;
   justify-content: space-evenly;
-
-  color: aliceblue;
 }
 .topbar-ul li {
   list-style: none;
   transition: all 0.3s;
   padding: 12px 24px;
   font-weight: 600;
+  color: aliceblue;
 }
 .topbar-ul li:hover {
   color: white;
@@ -26,4 +25,7 @@
   font-weight: 300;
   letter-spacing: 4px;
   padding: 12px 32px;
+}
+a {
+  text-decoration: none;
 }
