@@ -34,6 +34,50 @@
   text-align: center;
   font-size: 18px;
 }
+/* Tablets and smaller */
+@media (max-width: 768px) {
+  .home-container {
+    margin-top: 120px;
+    padding: 0 24px;
+  }
+
+  .home-container h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .home-container h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .home-container p {
+    font-size: 16px;
+    margin-top: 48px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .home-container {
+    margin-top: 80px;
+    padding: 0 16px;
+  }
+
+  .home-container h1 {
+    font-size: 28px;
+  }
+
+  .home-container h2 {
+    font-size: 1.125rem;
+  }
+
+  .home-container p {
+    font-size: 14px;
+    margin-top: 32px;
+  }
+}
+
 /*--------------------------------------------*/
 .about-container {
   display: flex;
@@ -79,6 +123,61 @@
   letter-spacing: 1px;
   text-align: center;
 }
+/* Tablets and smaller */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 24px;
+  }
+
+  .about-container div {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-container h1 {
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    font-size: 20px;
+  }
+
+  .about-container h2 {
+    font-size: 18px;
+  }
+
+  .about-container li,
+  .about-container p {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .about-container {
+    gap: 24px;
+    margin-top: 20px;
+    padding: 0 16px;
+  }
+
+  .about-container h1 {
+    font-size: 24pxpx;
+    padding: 12px 24px;
+    flex-direction: row;
+  }
+
+  .about-container h2 {
+    font-size: 16px;
+  }
+
+  .about-container li,
+  .about-container p {
+    font-size: 13px;
+  }
+}
+
 /*-----------------------------------------------------------------*/
 .parent {
   display: grid;
@@ -123,6 +222,32 @@
   box-shadow: 0 0 8px 4px rgba(76, 249, 255, 0.226);
   transform: rotate(2deg);
 }
+@media (max-width: 768px) {
+  .parent {
+    margin-top: -10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-column-gap: 0;
+    grid-row-gap: 24px;
+    padding: 40px;
+    padding-bottom: 100px;
+  }
+
+  .parent a {
+    width: 100%;
+    height: 200px; /* Adjust as needed for your design */
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5,
+  .div6 {
+    grid-area: unset;
+  }
+}
+
 /*--------------------------------------------------------------*/
 .contact-container {
   display: flex;
@@ -181,4 +306,59 @@
   scale: 1.2;
   cursor: pointer;
   transform: rotate(720deg);
+}
+/* Tablets and smaller */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 0 20px;
+    margin-top: 60px;
+  }
+
+  .contact-text h1 {
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .contact-text p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .contact-img {
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  .contact-img a {
+    height: 56px;
+    width: 56px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .contact-container {
+    margin-top: 40px;
+    padding: 0 16px;
+  }
+
+  .contact-text h1 {
+    font-size: 18px;
+  }
+
+  .contact-text p {
+    font-size: 13px;
+  }
+
+  .contact-img {
+    flex-direction: column;
+    margin-top: 32px;
+    gap: 12px;
+  }
+
+  .contact-img a {
+    height: 48px;
+    width: 48px;
+  }
 }

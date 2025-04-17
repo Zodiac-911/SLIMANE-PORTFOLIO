@@ -26,3 +26,13 @@
     transform: translateY(-32px);
   }
 }
+@media (max-width: 480px) {
+  .floating-circle {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .floating-circle {
+    margin-top: 30px;
+  }
+}
