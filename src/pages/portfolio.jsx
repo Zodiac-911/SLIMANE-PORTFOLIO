@@ -41,7 +41,7 @@ function Portfolio() {
         </a>
         <a
           target="_blank"
-          href="https://huddle-landing-page-peach-iota.vercel.app/"
+          href="https://converter-theta-bice.vercel.app/"
           class="div6"
         >
           {" "}
